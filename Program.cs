@@ -10,10 +10,10 @@ double saldoDevedor = Convert.ToDouble(Console.ReadLine());
 Console.Write("Informe a taxa de juros (em %): ");
 double taxaJuros = Convert.ToDouble(Console.ReadLine());
 
-// Calcular a amortização constante
+
 double amortizacao = saldoDevedor / numeroParcelas;
 
-// Calcular o valor da parcela mensal
+
 double taxaJurosDecimal = taxaJuros / 100;
 double valorParcela = amortizacao + (saldoDevedor * taxaJurosDecimal);
 
