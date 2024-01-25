@@ -9,11 +9,7 @@ double saldoDevedor = Convert.ToDouble(Console.ReadLine());
 
 Console.Write("Informe a taxa de juros (em %): ");
 double taxaJuros = Convert.ToDouble(Console.ReadLine());
-
-
 double amortizacao = saldoDevedor / numeroParcelas;
-
-
 double taxaJurosDecimal = taxaJuros / 100;
 //double valorParcela = amortizacao + (saldoDevedor * taxaJurosDecimal);
 
@@ -26,7 +22,7 @@ for (int i = 1; i <= numeroParcelas; i++)
     double juros = saldoDevedor * taxaJurosDecimal;
     saldoDevedor -= amortizacao;
     double valorParcela = amortizacao + (saldoDevedor * taxaJurosDecimal);
-
+    //*Corrigir exibição
     Console.WriteLine($"{i}\t{amortizacao:F2}\t\t{juros:F2}\t{saldoDevedor:F2}\t\t{valorParcela:F2}");
 }
 
