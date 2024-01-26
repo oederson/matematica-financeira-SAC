@@ -3,10 +3,8 @@
 // Solicitar informações ao usuário
 Console.Write("Informe o número de parcelas: ");
 int numeroParcelas = Convert.ToInt32(Console.ReadLine());
-
 Console.Write("Informe o saldo devedor: ");
 double saldoDevedor = Convert.ToDouble(Console.ReadLine());
-
 Console.Write("Informe a taxa de juros (em %): ");
 double taxaJuros = Convert.ToDouble(Console.ReadLine());
 double amortizacao = saldoDevedor / numeroParcelas;
